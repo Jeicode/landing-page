@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #186870 0%, #111318 100%) no-repeat;
+    color: #fff;
+    margin: auto 25px 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 5px;
+    width: 55px;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.nav_links {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.intro {
+    display: grid;
+    position: relative;
+}
+
+.intro_img {
+    width: 100%;
+    display: block;
+    margin: 55px auto 15px;
+    max-width: 700px;
+}
+
+.intro_title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.intro_text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.intro_btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #00c2cb;
+    color: #fff;
+    padding: 10px 35px;
+    margin: 10px auto 7em;
+    border-radius: 20px;
+}
+
+.services_cards {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.services_img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.services_title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.services_text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about_us {
+    display: grid;
+    margin-top: 7em; 
+} 
+
+.about_img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about_title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.about_text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.form_title {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2em;
+}
+
+.input {
+    margin: 5px auto;
+    padding: 3px 70px 3px 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding-bottom: 5px;
+    display: block;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.3px;
+    width: 168px;
+}
+
+#submit {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #00c2cb;
+    color: #fff;
+    padding: 10px 35px;
+    margin: 2.5em auto 5em;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.info_container {
+    display: grid;
+    gap: 1em;
+}
+
+.info_logo {
+    width: 100px;
+    display: block;
+}
+
+.info_text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info_contact {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.contact_number {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+.contact_email {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+.info_contact {
+    margin-top: 1em;
+}
+
+.info_links {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+.links {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 3em auto;
+}
+
+.social_links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 740px){
+    .header {
+        margin: 0 2em;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+
+    .nav_links {
+        font-size: 1.2em;
+    }
+
+    .intro_title {
+        font-size: 2.5rem;
+    }
+
+    .services_cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    #about_us {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 7em 3em;
+    }
+
+    .about_title {
+        font-size: 2rem;
+    }
+
+    .form_title {
+        font-size: 2rem;
+    }
+
+    .input {
+        margin: 5px auto;
+        padding: 3px 150px 3px 5px;
+        padding-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        width: 183px;
+    }
+
+    .info_main {
+        margin: 0 3em 5em;
+    }
+
+    .info_logo {
+        margin: 5em 3em auto 0;
+    }
+
+    .info_container {
+        grid-template-columns: 2fr max-content 1fr 1fr 1fr;
+        gap: 2em;
+    }
+
+    .info_contact {
+        margin: 1em 1em;
+    }
+
+    .social {
+        margin-top: 1.3em;
+        margin-left: 0;
+    }
+
+}
